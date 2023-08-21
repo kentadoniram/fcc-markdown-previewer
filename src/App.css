@@ -9,8 +9,10 @@
 
 textarea {
   width: 80%;
-  min-height: 200px;
-  min-width: 50%;
+  min-height: 300px;
+  min-width: 80%;
+  max-height: 700px;
+  max-width: 80%;
   height: 250px;
   margin-top: 8vh;
   background-color: #9ec2e6;
