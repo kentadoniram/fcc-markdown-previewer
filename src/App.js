@@ -22,11 +22,11 @@ function App() {
   }
   \`\`\`
 
-  1.First item
-  2.Second item
-  3.Third item
+  1. First item
+  2. Second item
+  3. Third item
 
-  > blockquote
+  > This is a blockquote
 
   ![alt text](image.jpg)
   **bold text**
@@ -38,10 +38,15 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="main">
+      <div className="editorDiv">
+      <div className='header'>Editor</div>
       <textarea id="editor" onChange={(e) => {setText(e.target.value);}} value={text}></textarea>
-      <div id='preview' dangerouslySetInnerHTML={{__html: marked(text)}}>
-        
+      </div>
+      <div id="wrapper">
+        <div className='header'>Previewer</div>
+        <div id='preview' dangerouslySetInnerHTML={{__html: marked(text)}}>
+      </div>
       </div>
     </div>
   );
